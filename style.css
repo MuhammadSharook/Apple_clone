@@ -120,6 +120,20 @@ body {
   letter-spacing: 0.23px;
   white-space: nowrap;
 }
+.section .img {
+  max-width: 100%;
+  height: 100%;
+}
+@media screen and (max-width:768px) {
+  .section {
+    flex-direction: column-reverse;
+    padding-inline: 0px;
+  }
+  .section .img {
+    max-width: 100%;
+    height: 100%;
+  }
+}
 .section-2 {
   display: flex;
   flex-direction: column;
@@ -136,7 +150,6 @@ body {
   text-align: center;
   letter-spacing: -0.28px;
   line-height: 60px;
-  white-space: nowrap;
 }
 .section-2 .div {
   display: flex;
@@ -153,7 +166,6 @@ body {
   text-align: center;
   letter-spacing: 0.22px;
   line-height: 28px;
-  white-space: nowrap;
 }
 .section-2 .div-3 {
   font-family: "SF Pro Display-Bold", Helvetica;
@@ -251,8 +263,7 @@ body {
   text-align: center;
   letter-spacing: -0.37px;
   line-height: 25px;
-  white-space: nowrap;
-  top: 40px;
+  margin-top: 40px;
 }
 .section-2 .link {
   font-weight: 400;
@@ -261,26 +272,50 @@ body {
   text-align: center;
   letter-spacing: -0.37px;
   line-height: 25px;
-  white-space: nowrap;
   text-decoration: none;
 }
-/* .section-3 {
-    /* margin: 10px;
-    padding: 10px;
-    height: 751px; */
-/* } */
+@media screen and (max-width:768px) {
+  .section-2 {
+    width: 100%;
+    height: 100%;
+  }
+  .section-2 .headding-1{
+    font-size: 44px;
+  }
+  .section-2 .div-2{
+    font-size: 18px;
+  }
+  .section-2 .div-3 {
+    font-size: 30px;
+  }
+  .section-2 .div-4 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+  .section-2 .img {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+.section-3 {
+    margin: 100%vw;
+    height: 100%vh;
+ } 
 .section-3 .div-6 {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 .section-3 .div-7 {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  /* margin: auto; */
   width: 675px;
   height: 751px;
 }
@@ -309,7 +344,7 @@ body {
   line-height: 29px;
   width: 466px;
   height: 83px;
-  top: 20px;
+  /* top: 20px; */
 }
 .section-3 .link-1 {
   font-family: "SF Pro Display-Regular", Helvetica;
@@ -320,7 +355,7 @@ body {
   letter-spacing: 0.23px;
   line-height: 29px;
   white-space: nowrap;
-  top: 40px;
+  /* top: 40px; */
   text-decoration: none;
 }
 .section-3 .div-9 {
@@ -330,11 +365,13 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  /* margin: auto; */
 }
 .section-3 .div-10 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 .section-3 .text-wrapper-10 {
   font-family: "SF Pro Display-Bold", Helvetica;
@@ -344,7 +381,6 @@ body {
   text-align: center;
   letter-spacing: -0.14px;
   line-height: 52px;
-  white-space: nowrap;
 }
 .section-3 .text-wrapper-11 {
   font-family: "SF Pro Display-Regular", Helvetica;
@@ -356,7 +392,7 @@ body {
   line-height: 29px;
   width: 430px;
   height: 83px;
-  top: 20px;
+  /* top: 20px; */
 }
 .section-3 .link-2 {
   font-family: "SF Pro Display-Regular", Helvetica;
@@ -367,8 +403,53 @@ body {
   letter-spacing: 0.23px;
   line-height: 29px;
   white-space: nowrap;
-  top: 40px;
+  /* margin-top: 20px; */
   text-decoration: none;
+}
+.section-3 .img {
+  max-width: 100%;
+  height: 100%;
+}
+@media screen and (max-width:768px) {
+  .section-3 .div-6{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .section-3 .img-1 {
+    max-width: 100%;
+    height: 100%;
+  }
+  .section-3 .div-7 {
+    width: auto;
+    height: auto;
+  }
+  .section-3 .div-8{
+    margin-bottom: 20px;
+  }
+  .section-3 .div-9 {
+    width: auto;
+    height: auto;
+  }
+  .section-3 .text-wrapper-8 {
+    font-size: 30px;
+    width: auto;
+  }
+  .section-3 .text-wrapper-9 {
+    width: auto;
+    height: auto;
+  }
+  .section-3 .text-wrapper-10 {
+    font-size: 30px;
+    width: auto;
+  }
+  .section-3 .text-wrapper-11 {
+    width: auto;
+    height: auto;
+  }
 }
 .section-4 {
   width: 1380px;
@@ -382,16 +463,18 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 30px;
-  padding: 20px;
+  /* margin: 30px;
+  padding: 20px; */
+  margin: auto;
 }
 .section-5 .div-13 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 30px;
-  padding: 40px;
+  /* margin: 30px;
+  padding: 40px; */
+  margin: auto;
 }
 .section-5 .tableTitle {
   font-family: "SF Pro Display-Bold", Helvetica;
@@ -401,7 +484,6 @@ body {
   text-align: center;
   letter-spacing: -0.14px;
   line-height: 52px;
-  white-space: nowrap;
   bottom: 50px;
 }
 .section-5 .button {
@@ -418,6 +500,7 @@ body {
   width: 45px;
   height: 24px;
 }
+
 .section-5 .link-3 {
   font-family: "SF Pro Text-Regular", Helvetica;
   font-weight: 400;
@@ -437,20 +520,35 @@ body {
   text-align: center;
   letter-spacing: 0.23px;
   line-height: 29px;
-  white-space: nowrap;
-  top: 30px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  gap: 40px;
 }
 .section-5 .link-5 {
-  right: 100px;
   text-decoration: none;
 }
 .section-5 .link-6 {
-  left: 60px;
   text-decoration: none;
+}
+@media screen and (max-width:768px) {
+  .section-5 {
+    width: 100%vw;
+    height: 100%vh;
+    margin: auto;
+  }
+  .section-5 .tableTitle {
+    font-size: 30px;
+  }
+  .section-5 .table {
+    overflow-x: auto;
+  }
+  .section-5 .img {
+    max-width: 100%;
+    height: 100%;
+  }
 }
 .section-6 {
   display: flex;
@@ -463,11 +561,12 @@ body {
 .section-6 .div-16 {
   background-image: url(img/manholdingiPhone.png);
   background-size: 100% 100%;
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
 }
 .section-6 .h {
   display: flex;
