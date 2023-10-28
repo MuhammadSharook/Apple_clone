@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #f2f2f2;
 }
 .global {
   background-color: #000000cc;
@@ -124,7 +125,7 @@ body {
   max-width: 100%;
   height: 100%;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .section {
     flex-direction: column-reverse;
     padding-inline: 0px;
@@ -274,15 +275,15 @@ body {
   line-height: 25px;
   text-decoration: none;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .section-2 {
     width: 100%;
     height: 100%;
   }
-  .section-2 .headding-1{
+  .section-2 .headding-1 {
     font-size: 44px;
   }
-  .section-2 .div-2{
+  .section-2 .div-2 {
     font-size: 18px;
   }
   .section-2 .div-3 {
@@ -300,9 +301,9 @@ body {
   }
 }
 .section-3 {
-    margin: 100%vw;
-    height: 100%vh;
- } 
+  margin: 100%vw;
+  height: 100%vh;
+}
 .section-3 .div-6 {
   display: flex;
   flex-direction: row;
@@ -365,7 +366,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* margin: auto; */
+  margin: auto;
 }
 .section-3 .div-10 {
   display: flex;
@@ -410,8 +411,8 @@ body {
   max-width: 100%;
   height: 100%;
 }
-@media screen and (max-width:768px) {
-  .section-3 .div-6{
+@media screen and (max-width: 768px) {
+  .section-3 .div-6 {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -427,7 +428,7 @@ body {
     width: auto;
     height: auto;
   }
-  .section-3 .div-8{
+  .section-3 .div-8 {
     margin-bottom: 20px;
   }
   .section-3 .div-9 {
@@ -452,11 +453,15 @@ body {
   }
 }
 .section-4 {
-  width: 1380px;
-  height: 560px;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-image: url(img/iphoneeverycorner.svg);
+  width: 100%;
+  margin-top: 40px;
+}
+.section-4 .img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section-5 {
   display: flex;
@@ -533,18 +538,17 @@ body {
 .section-5 .link-6 {
   text-decoration: none;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .section-5 {
     width: 100%vw;
     height: 100%vh;
     margin: auto;
+    padding-bottom: 20px;
   }
   .section-5 .tableTitle {
     font-size: 30px;
   }
-  .section-5 .table {
-    overflow-x: auto;
-  }
+
   .section-5 .img {
     max-width: 100%;
     height: 100%;
@@ -918,7 +922,387 @@ body {
   }
 }
 
+.section-5 .td {
+  text-align: center;
+}
 
+.section-10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.section-10 .headding-1 {
+  font-family: "SF Pro Display-Bold", Helvetica;
+  font-weight: 700;
+  color: #1d1d1f;
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: -0.28px;
+  line-height: 60px;
+}
+.section-10 .my-mag {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15%;
+  background-color: white;
+  /* margin: 20px; */
+  padding-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.section-10 .inner-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.section-10 .text-wrapper-1 {
+  font-family: "SF Pro Display-Bold", Helvetica;
+  font-weight: 700;
+  color: #1d1d1f;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: -0.14px;
+  line-height: 52px;
+}
+.section-10 .text-wrapper-2 {
+  font-family: "SF Pro Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #1d1d1f;
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0.23px;
+  line-height: 29px;
+}
 
+.section-10 .link-1 {
+  font-family: "SF Pro Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #0066cc;
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0.23px;
+  line-height: 29px;
+  text-decoration: none;
+}
+.my-mag .img {
+  max-width: 100%;
+  height: 100%;
+}
+.section-10 .my-tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15%;
+  background-color: white;
+}
+.section-10 .inner-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.section-10 .my-airpods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  padding-left: 18%;
+  padding-right: 18%;
+}
+.section-10 .shop-accessories {
+  margin-top: 30px;
+}
+.section-11 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 20px 30px;
+  padding-inline: 50px;
+}
+.section-11 .my-delivery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section-11 .headding-1 {
+  font-family: "SF Pro Display-Bold", Helvetica;
+  font-weight: 700;
+  color: #1d1d1f;
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0.23px;
+  line-height: 29px;
+}
+.section-11 .text-wrapper-1 {
+  font-family: "SF Pro Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #1d1d1f;
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0.23px;
+  line-height: 29px;
+}
+.section-11 .link-1 {
+  font-family: "SF Pro Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #0066cc;
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0.23px;
+  line-height: 29px;
+  text-decoration: none;
+}
+.section-11 .my-emi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section-11 .my-connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.section-11 .img {
+  max-width: 100%;
+  height: 100%;
+}
+.section-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  gap: 20px;
+}
+.section-12 .headding-1 {
+  font-family: "SF Pro Display-Bold", Helvetica;
+  font-weight: 700;
+  color: #1d1d1f;
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: -0.28px;
+  line-height: 60px;
+}
+.section-12 .img {
+  max-width: 100%;
+  height: 100%;
+}
+.section-12 .inner-2 {
+  background-color: white;
+}
+.section-12 .text-wrapper-1 {
+  font-family: "SF Pro Display-Bold", Helvetica;
+  font-weight: 700;
+  color: #1d1d1f;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: -0.14px;
+  line-height: 52px;
+}
+.section-13 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.section-13 .headding-1 {
+  font-family: "SF Pro Display-Bold", Helvetica;
+  font-weight: 700;
+  color: #1d1d1f;
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: -0.28px;
+  line-height: 60px;
+}
+.section-13 .img {
+  max-width: 100%;
+  height: 100%;
+}
+.section-13 .inner-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10%;
+  /* gap: 40px; */
+  width: 80%;
+  height: 100%;
+}
+.section-13 .inner-1 .my-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.section-13 .inner-1 .text-wrapper-1 {
+  font-family: "SF Pro Display-Bold", Helvetica;
+  font-weight: 700;
+  color: #1d1d1f;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  line-height: 32px;
+}
+.section-13 .inner-1 .link-class {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* gap: 50px; */
+}
+.section-13 .link-1 {
+  font-weight: 400;
+  color: #0066cc;
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0.23px;
+  line-height: 29px;
+  text-decoration: none;
+}
+.section-13 .inner-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  height: 100%;
+  margin-top: 20px;
+}
+.section-13 .my-tv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #090a0e;
+  /* padding: 40px 40px; */
+}
+.section-13 .my-music {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.section-13 .inner-2 .my-tv .sub-section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.section-13 .inner-2 .text-wrapper-1 {
+  font-family: "SF Pro Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #f5f5f7;
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0.23px;
+  line-height: 29px;
+}
 
-
+.section-13 .inner-2 .link-class {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 50px;
+  padding-bottom: 20px;
+}
+.section-13 .inner-2 .my-music .text-wrapper-2 {
+  font-family: "SF Pro Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #1d1d1f;
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0.23px;
+  line-height: 29px;
+}
+.section-13 .my-music .sub-section-1 {
+  display: flex;
+  flex-direction: column;
+}
+.section-13 .inner-3 {
+  display: flex;
+  gap: 40px;
+}
+.section-13 .inner-4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 75%;
+}
+.section-13 .inner-4 .sub-section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-13 .text-wrapper-1 {
+  font-family: "SF Pro Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #1d1d1f;
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0.23px;
+  line-height: 29px;
+}
+.section-13 .inner-4 .link-class {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 30px;
+  
+}
+.section-13 .my-fitness {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  background-color: white;
+}
+.section-13 .my-gift {
+  padding-bottom: 3%;
+  padding-top: 5%;
+  background-color: white;
+}
+.section-13 .inner-5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  height: 100%;
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 1%;
+  padding-top: 10%;
+}
+.section-13 .inner-5 .headding-1 {
+  font-family: "SF Pro Display-Bold", Helvetica;
+  font-weight: 700;
+  color: #1d1d1f;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: -0.14px;
+  line-height: 52px;
+}
+.section-13 .inner-5 .text-wrapper-1 {
+  font-family: "SF Pro Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #1d1d1f;
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0.23px;
+  line-height: 29px;
+}
+.section-13 .inner-5 .sub-section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
