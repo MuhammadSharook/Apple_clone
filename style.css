@@ -634,6 +634,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: white;
+  
 }
 .section-7 .div-17 {
   display: flex;
@@ -712,6 +713,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 30px;
+    padding-top: 30px;
   }
   .section-7 .text-wrapper-15 {
     font-size: 34px;
